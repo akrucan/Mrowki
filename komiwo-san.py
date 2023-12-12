@@ -170,26 +170,7 @@ def show_chart(best_path, best_path_length):
 
     plt.show()
 
-best_result = VRP(city_dist=city_dist, cars=5, iterations=5000, cargo=1000, city_demands=city_demands, alpha=0.9, beta=20, evaporation_rate=0.90, Q=1000)
-while best_result["best path length"] > 4100:
-    best_result = VRP(city_dist=city_dist, cars=5, iterations=6000, cargo=1000, city_demands=city_demands, alpha=0.9, beta=20, evaporation_rate=0.95, Q=1000)
-    print(best_result["best path length"])
-with open("Tests\\best_result.json", "w") as w:
-    json.dump(best_result, w, indent= 2)
-show_chart(best_path=best_result["best path"], best_path_length=best_result["best path length"])
-
-# sf = shp.Reader("A00_Granice_panstwa.shp")
-# plt.figure()
-# for shape in sf.shapeRecords():
-#     x = [i[0] for i in shape.shape.points[:]]
-#     y = [i[1] for i in shape.shape.points[:]]
-#     plt.plot(x,y)
-# plt.show()
-
-
-# VRP(city_dist=city_dist, cars=5, iterations=3000, cargo=1000, city_demands=city_demands, city_coords=city_coords, alpha=0.5, beta=20, evaporation_rate=0.90, Q=20)
-
-
+#funkcja testująca średnie wartości zwracane przez funkcję
 def test(start, end, jump, iterations, test_iterations):
     iteration_chart = []    
     for i in range(start, end, jump):
@@ -202,13 +183,34 @@ def test(start, end, jump, iterations, test_iterations):
         print(iteration_chart)
     return iteration_chart
 
+best_result = VRP(city_dist=city_dist, cars=5, iterations=5000, cargo=1000, city_demands=city_demands, alpha=0.9, beta=20, evaporation_rate=0.90, Q=1000)
+show_chart(best_path=best_result["best path"], best_path_length=best_result["best path length"])
+
+# while best_result["best path length"] > 4100:
+#     best_result = VRP(city_dist=city_dist, cars=5, iterations=6000, cargo=1000, city_demands=city_demands, alpha=0.9, beta=20, evaporation_rate=0.95, Q=1000)
+#     print(best_result["best path length"])
+# with open("Tests\\best_result.json", "w") as w:
+#     json.dump(best_result, w, indent= 2)
+# sf = shp.Reader("A00_Granice_panstwa.shp")
+# plt.figure()
+# for shape in sf.shapeRecords():
+#     x = [i[0] for i in shape.shape.points[:]]
+#     y = [i[1] for i in shape.shape.points[:]]
+#     plt.plot(x,y)
+# plt.show()
+
+
+# VRP(city_dist=city_dist, cars=5, iterations=3000, cargo=1000, city_demands=city_demands, city_coords=city_coords, alpha=0.5, beta=20, evaporation_rate=0.90, Q=20)
+
+
+
 # alfa_test = test(50, 101, 5, 1000, 20)
 
 # with open("testy_alfa.json", "w") as w:
 #     json.dump(alfa_test, w, indent= 2)
 
-x = []
-y = []
+# x = []
+# y = []
 
 
 # fig = plt.figure(figsize=(8,6))
@@ -222,20 +224,20 @@ y = []
 
 
 
-with open("Tests\\testy_iteracje_funkcja.json", "r") as r:
-    data = json.load(r)
-    for i in range(len(data)-1):
-        x.append(data[i][0])
-        y.append(data[i][1])
+# with open("Tests\\testy_iteracje_funkcja.json", "r") as r:
+#     data = json.load(r)
+#     for i in range(len(data)-1):
+#         x.append(data[i][0])
+#         y.append(data[i][1])
 
 # for k in alfa_test:
 #     for i in range(len(k)-1):
 #         x.append(k[0])
         # y.append(k[1]/100)
-for k in data[-1]:
-    for i in range(len(k)-1):
-        x.append(k[0])
-        y.append(k[1])
+# for k in data[-1]:
+#     for i in range(len(k)-1):
+#         x.append(k[0])
+#         y.append(k[1])
 
 # plt.plot(x,y, linewidth=3)
 # plt.xlabel('Procent ewaporacji',fontsize=15)
@@ -249,12 +251,12 @@ for k in data[-1]:
 # chart_data.append(test(2000,10001,1000, 20))
 
 
-plt.plot(x,y, linewidth=3)
-# plt.margins(y)
-plt.xlabel('Liczba iteracji',fontsize=15)
-plt.ylabel('Średnia długość', fontsize=15)
-plt.title("Stosunek ilości iteracji algorytmu do średniej poszukiwanej długości minimalnej", fontsize=20)
-plt.show()
+# plt.plot(x,y, linewidth=3)
+# # plt.margins(y)
+# plt.xlabel('Liczba iteracji',fontsize=15)
+# plt.ylabel('Średnia długość', fontsize=15)
+# plt.title("Stosunek ilości iteracji algorytmu do średniej poszukiwanej długości minimalnej", fontsize=20)
+# plt.show()
 
 
 
