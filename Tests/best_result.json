@@ -1,0 +1,176 @@
+{
+  "iterations": 3000,
+  "alpha": 0.9,
+  "beta": 20,
+  "Q": 20,
+  "evaporation rate": 0.95,
+  "best path": [
+    [
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      },
+      {
+        "name": "Szklarska Por\u0119ba",
+        "index": 24
+      },
+      {
+        "name": "Wroc\u0142aw",
+        "index": 28
+      },
+      {
+        "name": "Pozna\u0144",
+        "index": 17
+      },
+      {
+        "name": "Szczecin",
+        "index": 22
+      },
+      {
+        "name": "Gda\u0144sk",
+        "index": 4
+      },
+      {
+        "name": "Gdynia",
+        "index": 5
+      },
+      {
+        "name": "Malbork",
+        "index": 14
+      },
+      {
+        "name": "\u0141\u00f3d\u017a",
+        "index": 13
+      },
+      {
+        "name": "Kielce",
+        "index": 9
+      },
+      {
+        "name": "Szczucin",
+        "index": 23
+      },
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      }
+    ],
+    [
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      },
+      {
+        "name": "Bialystok",
+        "index": 1
+      },
+      {
+        "name": "Krynica",
+        "index": 11
+      },
+      {
+        "name": "Warszawa",
+        "index": 26
+      },
+      {
+        "name": "Radom",
+        "index": 19
+      },
+      {
+        "name": "Lublin",
+        "index": 12
+      },
+      {
+        "name": "Rzesz\u00f3w",
+        "index": 20
+      },
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      }
+    ],
+    [
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      },
+      {
+        "name": "Tarn\u00f3w",
+        "index": 25
+      },
+      {
+        "name": "Gromnik Lesser Poland",
+        "index": 7
+      },
+      {
+        "name": "Krosno",
+        "index": 10
+      },
+      {
+        "name": "Nowy Targ",
+        "index": 15
+      },
+      {
+        "name": "Zakopane",
+        "index": 29
+      },
+      {
+        "name": "Bielsko-Bia\u0142a",
+        "index": 2
+      },
+      {
+        "name": "Gliwice",
+        "index": 6
+      },
+      {
+        "name": "Wieliczka",
+        "index": 27
+      },
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      }
+    ],
+    [
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      },
+      {
+        "name": "Sandomierz",
+        "index": 21
+      },
+      {
+        "name": "Pu\u0142awy",
+        "index": 18
+      },
+      {
+        "name": "Zamo\u015b\u0107",
+        "index": 30
+      },
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      }
+    ],
+    [
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      },
+      {
+        "name": "Katowice",
+        "index": 8
+      },
+      {
+        "name": "Chrzan\u00f3w",
+        "index": 3
+      },
+      {
+        "name": "Krak\u00f3w",
+        "index": 0
+      }
+    ]
+  ],
+  "best path length": 4084.697878902093
+}

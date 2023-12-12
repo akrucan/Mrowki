@@ -1,7 +1,7 @@
 from geopy.geocoders import Nominatim
 import json 
 
-r = open("miasta.txt", "r", encoding="utf-8")
+r = open("data\\miasta.txt", "r", encoding="utf-8")
 
 coordinates = {}
 
